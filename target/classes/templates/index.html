@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Home Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"></meta>		
+		
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.1/css/bootstrap-datetimepicker.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.1/css/bootstrap-datetimepicker.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.1/js/bootstrap-datetimepicker.min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.css" rel="stylesheet"></link>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+	
+		<link href="/css/index.css" rel="stylesheet" media="screen"/>
+		<script type="text/javascript" src="/js/index.js"></script>
+		
+    </head>
+    <body>
+    	<div th:replace="include/top :: top"></div>
+    
+	    <div class="mt-4" >  
+        	<div class="container">  
+				<h2 class="text-center p-2">Trabajo final de Matemáticas Especiales.</h2>
+				<hr class="mb-5"></hr>
+				
+				<div class="row">	
+					<div class="col-md-12 col-lg-12 mb-4">
+					  	<div class="card">
+							<div class="card-header bg-info">
+								<div class="panel-title">
+									<div class="row">
+										<div class="col-lg-6 my-auto">
+											<h5><i class="fas fa-calculator"></i>&nbsp; Calculadora</h5>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+									<form >								  	
+									  	<div class="row mt-2 pl-3" >
+											
+											
+											<div class="form-group col-lg-3 text-center">
+				         						<label for="nombre" class="control-label "><font face="Verdana">COMPLEJO N° 1</font></label>
+						                        
+						                    </div>
+						                    <div class="form-group col-lg-1rem col-sm-1rem col-1rem">
+						                 		<select  id="sgn1" name="sgn1" style="padding:7px;!Important" class="form-control" required="required">											
+													<option class="opcion" value="1" >+</option>
+													<option class="opcion" value="2" >-</option>
+												</select>
+						                    </div>
+											
+						                    <div class="form-group col-lg-3 col-sm-4 col-3" style="padding-left:0;!Important">
+				         						<input type="number" min="0" class="form-control" id="n1" required="required"/>
+						                    </div>
+						                    <div class="form-group col-lg-1rem col-sm-1rem col-1rem">
+						                    	<select  id="sgn2" name="sgn2" style="padding:7px;!Important" class="form-control" required="required">											
+													<option class="opcion" value="1" >+</option>
+													<option class="opcion" value="2" >-</option>
+												</select>
+						                    </div>
+						                     
+						                    <div class="form-group col-lg-3 col-sm-5 col-5" style="padding-left:0;!Important">
+						                    	<div class="input-group">
+				         							<input type="number" min="0" class="form-control" id="n2" required="required"/>
+				         							<div class="input-group-prepend">
+										     			<div class="input-group-text"><b><i>i</i></b></div>
+										    		</div>
+				         						</div>
+						                    </div>
+						                    
+						                    
+					                    </div>
+					                    
+					                   <div class="row mt-2 pl-3" >
+											
+											<div class="form-group col-lg-3 text-center">
+				         						<label for="nombre" class="control-label "><font face="Verdana">COMPLEJO N° 2</font></label>
+						                        
+						                    </div>
+						                    <div class="form-group col-lg-1rem col-sm-1rem col-1rem">
+						                 		<select  id="sgn3" name="sgn3" style="padding:7px;!Important" class="form-control" required="required">											
+													<option class="opcion" value="1" >+</option>
+													<option class="opcion" value="2" >-</option>
+												</select>
+						                    </div>
+											
+						                    <div class="form-group col-lg-3 col-sm-4 col-3" style="padding-left:0;!Important">
+				         						<input type="number" min="0" class="form-control" id="n3" required="required"/>
+						                    </div>
+						                    <div class="form-group col-lg-1rem col-sm-1rem col-1rem">
+						                    	<select  id="sgn4" name="sgn4" style="padding:7px;!Important" class="form-control" required="required">											
+													<option class="opcion" value="1" >+</option>
+													<option class="opcion" value="2" >-</option>
+												</select>
+						                    </div>
+						                     
+						                    <div class="form-group col-lg-3 col-sm-5 col-5" style="padding-left:0;!Important">
+						                    	<div class="input-group">
+				         							<input type="number" min="0" class="form-control" id="n4" required="required"/>
+				         							<div class="input-group-prepend">
+										     			<div class="input-group-text"><b><i>i</i></b></div>
+										    		</div>
+				         						</div>
+						                    </div>
+						                    
+						                    
+					                    </div>
+					                    
+					                    <hr></hr>
+					                    
+					                    <div class="row mt-2 pl-3" >
+											
+											<div class="form-group col-lg-3 col-sm-3 text-center">
+				         						<label for="nombre" class="control-label "><font face="Verdana">Operación</font></label>
+						                        
+						                    </div>
+						                    <div class="form-group col-lg-1rem col-sm-1rem">
+						                 		<select  id="op" name="op" class="form-control" required="required">											
+													<option class="opcion" value="1" >suma</option>
+													<option class="opcion" value="2" >resta</option>
+													<option class="opcion" value="3" >multiplicacion</option>
+													<option class="opcion" value="4" >division</option>
+												</select>
+						                    </div>
+											
+						                    
+						                    
+					                    </div>	
+					                    
+					                    <hr></hr>
+					                    
+					                    <div class="row mt-2" >
+					                    	<div class="form-group col-lg-6 col-sm-6">
+						                        <div class="col-lg-offset-2 col-lg-10">
+						                        	
+						                            <input type="button" id ="btnCalcular" class="btn btn-success" value="Calcular"/>
+						                        </div>
+						                       
+						                    </div>
+					                    </div>
+									 
+									</form>
+								
+							</div>
+						</div>
+					</div>
+			
+				
+				</div>
+				
+				<div class="row" id ="resultado" style="display:none;">	
+					<div class="col-md-12 col-lg-12 mb-4">
+					  <div class="card text-center">
+					   
+					   
+					    <div class="card-body">
+					      <p class="my-auto"></p>
+					      
+					    </div>
+					  </div>
+					</div>
+			
+				
+				</div>
+				
+            </div>
+        </div>
+    	
+    </body>
+</html>
